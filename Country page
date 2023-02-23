@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Paul's Maps & Stats</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/183/183762.png">
+		<link rel="stylesheet" href="styles.css">
+		<script type="text/javascript" src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+		<script type="text/javascript">
+			var viz;
+
+			function initViz() {
+				var containerDiv = document.getElementById("vizContainer"),
+					url = "https://public.tableau.com/views/khfcgjfx_hdbcj_chehcb/Countrywidget",
+					options = {
+						hideTabs: false,
+						showshare: false
+					};
+				viz = new tableau.Viz(containerDiv, url, options);
+			}
+		</script>
+	</head>
+	<body onload="initViz();">
+		<a href="https://shanaka00jayalath.github.io/hello-world/">Home</a>
+		<a href="https://shanaka00jayalath.github.io/hello-world/Age distribution.html">Age distribution</a>
+		<a href="https://shanaka00jayalath.github.io/hello-world/Urban v Rural.html">Urban v Rural</a>
+		<a href="https://shanaka00jayalath.github.io/hello-world/Country page.html">Country page</a>
+		<div id="vizContainer"></div>
+	</body>
+</html>
