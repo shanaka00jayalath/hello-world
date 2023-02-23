@@ -4,6 +4,7 @@
 
 html,body {
   margin: 0; 
+  height: 100%;  
 }
 
 #vizContainer{
@@ -15,9 +16,6 @@ html,body {
 
 #vizContainer1, #vizContainer2 {
   margin: 0; 
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
 }
 
 @media only screen and (max-width:800px) {
