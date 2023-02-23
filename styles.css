@@ -14,6 +14,13 @@ html,body {
   overflow: hidden;
 }
 
+#vizContainer1, #vizContainer2 {
+  margin: 0; 
+  width: 100%;
+  height: auto;
+  overflow: auto;
+}
+
 @media only screen and (max-width:800px) {
   /* For tablets: */
   #vizContainer {
@@ -22,9 +29,4 @@ html,body {
   overflow-y: scroll; /* Add vertical scrollbar */
 }
   
-#vizContainer1,#vizContainer2{
-  margin: 0; 
-  width: 100%;
-  height: auto;
-  overflow: auto;
-}
+
