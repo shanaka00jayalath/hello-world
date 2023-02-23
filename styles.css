@@ -16,6 +16,8 @@ html,body {
 
 #vizContainer1, #vizContainer2 {
   margin: 0; 
+  width: 100%;
+  height: 50%;
 }
 
 @media only screen and (max-width:800px) {
