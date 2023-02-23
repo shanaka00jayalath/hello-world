@@ -5,9 +5,11 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1.0">
 		<link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/183/183762.png">
 		<link rel="stylesheet" href="styles.css">
-		<script type="module" src="https://embedding.tableauusercontent.com/tableau.embedding.3.1.0.min.js"></script>
 		<script type="text/javascript">
-			var viz;
+			import {
+			  TableauViz,
+			  TableauEventType,
+			} from 'https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js';var viz;
 
 			function initViz() {
 				var containerDiv = document.getElementById("vizContainer1"),
