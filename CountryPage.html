@@ -13,16 +13,16 @@
 				let viz = document.getElementById("tableauViz");
 				let sheet = viz.workbook.activeSheet;
 				if (country) {
-					await sheet.applyFilterAsync("Country Name", [country], FilterUpdateType.Replace);
+					await sheet.applyFilterAsync("Country Parameter", [country], FilterUpdateType.Replace);
 				} else {
-					await sheet.clearFilterAsync("Country Name");
+					await sheet.clearFilterAsync("Country Parameter");
 				}
 				let viz2 = document.getElementById("tableauViz2");
 				let sheet2 = viz2.workbook.activeSheet;
 				if (country) {
-					await sheet2.applyFilterAsync("Country Name", ["Sudan"], FilterUpdateType.Replace);
+					await sheet2.applyFilterAsync("Country Parameter", [country], FilterUpdateType.Replace);
 				} else {
-					await sheet2.clearFilterAsync("Country Name");
+					await sheet2.clearFilterAsync("Country Parameter");
 				}
 			}
 			const dropdown = document.getElementById("changeCountry");
